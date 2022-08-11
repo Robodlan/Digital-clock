@@ -3,12 +3,12 @@ let clock = () =>{
    let hrs = date.getHours();
    let mins = date.getMinutes();
    let secs = date.getSeconds();
-   let period = "AM";
+   let period = "PM";
    if (hrs == 12) {
        hrs = 12;
    } else if (hrs >= 12) {
        hrs = hrs - 12;
-       period = "PM"
+       period = "AM"
    }
    hrs = hrs < 10 ? `0${hrs}` : hrs;
    mins = mins < 10 ? `0${mins}` : mins;
