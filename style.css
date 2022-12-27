@@ -2,13 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* overflow: hidden; */
 }
 
 body {
     background: #0f3854;
     background: radial-gradient(ellipse at center,  #0a2e38  0%, #000000 70%);
     background-size: 100%;
-    
 }
 
 .container {
@@ -21,9 +21,112 @@ body {
 
 .clock {
     font-family: 'Orbitron', sans-serif;
-    font-size: 110px;
+    font-size: 150px;
     color: #daf6ff;
     text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
 }
 
+                  /* * * * * * * * * * */
 
+/* @Media */   /* Iphone 5/SE */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) { 
+    /* Styles */
+    .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .clock {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 40px;
+            margin-bottom: 150px;
+        }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) { 
+    /* Styles */
+    .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .clock {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 50px;
+            margin-bottom: 200px;
+        }
+  }
+
+/* @Media */   /* SAMSUNG GALAXY S8, S20 ULTRA */ 
+   @media only screen and (min-device-width: 360px) and (max-device-width: 740px) { 
+    .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+        .clock {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 45px;
+            margin-bottom: 250px;
+        }
+    }
+
+/* @Media */   /* IPAD MINI */    
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) { 
+    .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        /* align-items: flex-start; */
+    }
+    
+        .clock {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 100px;
+            margin-bottom: 350px;
+        }
+    
+}
+
+  /* @Media */   /* IPAD AIR */    
+@media only screen and (min-device-width: 820px) and (max-device-width: 1180px) { 
+    .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+    }
+    .clock {
+        font-size: 100px;
+        font-family: 'Orbitron', sans-serif;
+        margin-bottom: 350px;
+    }
+    
+}
+   /* IPAD PRO */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) { 
+    .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .clock {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 110px;
+        margin-bottom: 650px;
+    }
+}
+
+
+
+  
